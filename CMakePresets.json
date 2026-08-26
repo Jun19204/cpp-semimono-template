@@ -1,0 +1,55 @@
+{
+  "version": 6,
+
+
+  "configurePresets": [
+    {
+      "name": "base",
+      "hidden": true, 
+      "generator": "Unix Makefiles",
+      "binaryDir": "${sourceDir}/build-${presetName}",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+      }
+    },
+    {
+      "name": "asan",
+      "inherits": "base",
+      "cacheVariables": {
+        "USE_SANITIZER": "ON"
+      }
+    },
+    {
+      "name": "valgrind",
+      "inherits": "base",
+      "cacheVariables": {
+        "USE_SANITIZER": "OFF"
+      }
+    }
+  ],
+
+
+  "buildPresets": [
+    {
+      "name": "asan",
+      "configurePreset": "asan"
+    },
+    {
+      "name": "valgrind",
+      "configurePreset": "valgrind"
+    }
+  ],
+
+
+  "testPresets": [
+    {
+      "name": "asan",
+      "configurePreset": "asan",
+      "output": {
+        "outputOnFailure": true
+      }
+    }
+  ]
+}
+

@@ -1,0 +1,44 @@
+# CMake Build Directories
+build/
+build-*/
+cmake-build-*/
+
+# CMake Generated Files
+CMakeCache.txt
+CMakeFiles/
+CTestTestfile.cmake
+Testing/
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+
+# CTest
+DartConfiguration.tcl
+
+# Object Files
+*.o
+*.obj
+
+# IDE
+.vscode/
+.idea/
+
+# Vim
+*.swp
+*.swo
+*.swn
+*~
+
+# Executables
+*.out
+*.exe
+
+# Coverage
+*.gcda
+*.gcno
+*.gcov
+
+# Sanitizer Logs
+asan.log*
+ubsan.log*
+

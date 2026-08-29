@@ -15,6 +15,9 @@ compile_commands.json
 # CTest
 DartConfiguration.tcl
 
+# Clangd cache
+.cache/
+
 # Object Files
 *.o
 *.obj

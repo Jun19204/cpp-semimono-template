@@ -8,7 +8,6 @@ Checks: >
   modernize-*,
   readability-*,
   -modernize-use-trailing-return-type,
-  -modernize-type-traits,  
   -readability-identifier-naming,
   -readability-magic-numbers,
   -readability-uppercase-literal-suffix,

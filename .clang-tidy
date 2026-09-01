@@ -17,7 +17,7 @@ Checks: >
 
 # C++20 표준에 맞춘 현대적 관용구 검사 설정
 CheckOptions:
-  - key:             modernize-use-auto.MinTypeNameLength
-    value:           '5'
-  - key:             performance-for-range-copy.WarnOnAllAutoCopies
-    value:           'true'
+  - key: modernize-use-auto.MinTypeNameLength
+    value: '5'
+  - key: performance-for-range-copy.WarnOnAllAutoCopies
+    value: 'true'

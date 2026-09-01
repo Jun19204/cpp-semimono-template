@@ -2,4 +2,7 @@ Checks: >
   bugprone-*,
   performance-*,
   modernize-*,
-  -modernize-use-trailing-return-type
+  readability-*,
+  -modernize-use-trailing-return-type,
+  -readability-identifier-naming,
+  -readability-magic-numbers

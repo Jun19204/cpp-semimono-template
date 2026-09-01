@@ -1,8 +1,29 @@
+# 대상 C++ 표준 지정 (C++20 메타프로그래밍 문법 및 컨셉 지원)
+HeaderFilterRegex: '.*'
+FormatStyle: 'file'
+
 Checks: >
   bugprone-*,
   performance-*,
   modernize-*,
   readability-*,
+  
+  # --- Modernize 예외 처리 ---
   -modernize-use-trailing-return-type,
+  -modernize-type-traits,
+  
+  # --- Readability 예외 처리 ---
   -readability-identifier-naming,
-  -readability-magic-numbers
+  -readability-magic-numbers,
+  -readability-uppercase-literal-suffix,
+  -readability-function-cognitive-complexity,
+
+  # --- Bugprone / Performance 예외 처리 ---
+  -bugprone-easily-swappable-parameters
+
+CheckOptions:
+  # C++20 표준에 맞춘 현대적 관용구 검사 설정
+  - key:             modernize-use-auto.MinTypeNameLength
+    value:           '5'
+  - key:             performance-for-range-copy.WarnOnAllAutoCopies
+    value:           'true'

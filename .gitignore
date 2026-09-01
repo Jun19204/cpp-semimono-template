@@ -23,6 +23,7 @@ DartConfiguration.tcl
 *.obj
 
 # IDE
+.vs/
 .vscode/
 .idea/
 

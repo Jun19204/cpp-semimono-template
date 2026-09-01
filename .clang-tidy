@@ -1,4 +1,5 @@
 Checks: >
   bugprone-*,
   performance-*,
-  modernize-*
+  modernize-*,
+  -modernize-use-trailing-return-type

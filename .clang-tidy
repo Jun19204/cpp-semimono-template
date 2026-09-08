@@ -1,3 +1,4 @@
+---
 # 대상 C++ 표준 지정 (C++20 메타프로그래밍 문법 및 컨셉 지원)
 HeaderFilterRegex: '.*'
 FormatStyle: 'file'
